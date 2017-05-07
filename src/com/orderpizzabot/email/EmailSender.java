@@ -15,8 +15,8 @@ import java.util.Properties;
 public class EmailSender {
     EmailMessage emailMessage;
     public static final String managerEmail = "admitriev5813@gmail.com";
-    public static final String kitchenEmail = "";
-    public static final String courierEmail = "";
+    public static final String kitchenEmail = "admitriev5813@gmail.com";
+    public static final String courierEmail = "admitriev5813@gmail.com";
 
     public EmailSender(EmailMessage emailMessage) {
         this.emailMessage = emailMessage;

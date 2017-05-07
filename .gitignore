@@ -13,6 +13,7 @@ bin/
 gen/
 out/
 tmp/
+lib/
 
 # Gradle files
 .gradle/

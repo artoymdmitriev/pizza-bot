@@ -4,6 +4,8 @@ import com.orderpizzabot.items.Complementary;
 import com.orderpizzabot.items.Order;
 import com.orderpizzabot.items.Pizza;
 
+import java.text.SimpleDateFormat;
+
 /**
  * Created by Artoym on 04.04.2017.
  */
@@ -21,10 +23,10 @@ public class EmailMessage {
         String result = "Заказаны следующие пиццы:\n";
 
         for(Pizza p : order.getOrderedPizzas()) {
-            result = result + p.getName() + " Ингридиенты: " + p.getIngridients() + ". Вес: " + p.getWeight() + " грамм. Диаметр: " + p.getDiameter() + "\n";
+            result = result + p.getName() + " Ингридиенты: " + p.getIngridients() + ". Вес: " + p.getWeight() + " грамм. Диаметр: " + p.getDiameter() + " см.\n";
         }
 
-        result = result + "\n Помимо этого в заказ необходимо добавить следующие сопутствующие товары:\n";
+        result = result + "\n Помимо этого в заказ необходимо добавить следующие дополнительные товары:\n";
 
         for(Complementary c : order.getOrderedComplementaries()) {
             result = result + c.getName() + "\n";

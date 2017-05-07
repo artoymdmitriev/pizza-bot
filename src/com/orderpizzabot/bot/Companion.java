@@ -410,6 +410,8 @@ public class Companion extends TelegramLongPollingBot {
         EmailMessage emailMessage = new EmailMessage(order);
         EmailSender emailSender = new EmailSender(emailMessage);
         emailSender.sendEmailToManager();
+        emailSender.sendEmailToCourier();
+        emailSender.sendEmailToKitchen();
 
         //TODO add more info to the message
         SendMessage sendMessage = new SendMessage();
